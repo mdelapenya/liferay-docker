@@ -1,6 +1,8 @@
 FROM java:7
 MAINTAINER Manuel de la Peña <manuel.delapenya@liferay.com>
 
+RUN apt-get update
+
 ENV LIFERAY_HOME /usr/local/liferay-portal-7.0-ce-b7
 
 RUN mkdir -p "$LIFERAY_HOME"
