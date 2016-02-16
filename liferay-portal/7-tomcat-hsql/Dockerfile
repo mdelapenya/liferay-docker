@@ -19,5 +19,6 @@ RUN set -x \
 			&& rm liferay-portal-tomcat-7.0-ce-b7-20160210093853489.zip
 
 EXPOSE 8080/tcp
+EXPOSE 11311/tcp
 
 CMD ["catalina.sh", "run"]
