@@ -1,7 +1,9 @@
 FROM java:7
 MAINTAINER Manuel de la Peña <manuel.delapenya@liferay.com>
 
-RUN apt-get update
+RUN apt-get update \
+	&& apt-get clean \
+	&& rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ENV LIFERAY_HOME /usr/local/liferay-portal-7.0-ce-b7
 
