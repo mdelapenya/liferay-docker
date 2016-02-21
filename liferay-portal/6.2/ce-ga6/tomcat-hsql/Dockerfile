@@ -26,4 +26,4 @@ ADD ./configs/setenv.sh $CATALINA_HOME/bin/setenv.sh
 
 EXPOSE 8080/tcp
 
-CMD ["catalina.sh", "run"]
+ENTRYPOINT ["catalina.sh", "run"]
