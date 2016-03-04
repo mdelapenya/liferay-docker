@@ -22,7 +22,7 @@ RUN set -x \
 			&& unzip liferay-portal-tomcat-7.0-ce-b8-20160223094645600.zip \
 			&& rm liferay-portal-tomcat-7.0-ce-b8-20160223094645600.zip
 
-ADD ./configs/setenv.sh $CATALINA_HOME/bin/setenv.sh
+COPY ./configs/setenv.sh $CATALINA_HOME/bin/setenv.sh
 
 EXPOSE 8080/tcp
 EXPOSE 11311/tcp
