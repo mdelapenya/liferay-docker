@@ -5,7 +5,7 @@ RUN apt-get update \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ENV LIFERAY_HOME=/usr/local/liferay-portal-7.0-ce-ga2
+ENV LIFERAY_HOME=/usr/local/liferay-ce-portal-7.0-ga2
 
 RUN mkdir -p "$LIFERAY_HOME"
 
